@@ -1,0 +1,456 @@
+html,body {
+    margin: 0 auto;
+    height: 100%;
+    background-color: #41373f;
+}
+#contenedor {
+    margin: 0 auto;
+    margin-bottom: -10px;
+    min-height: 100%;  
+}
+
+/* Cabecera */
+
+header nav{    
+    background-color: #c95511;
+    height: 75px;
+    display: block;
+}
+
+header img{
+    display: block;
+    float: left;
+}
+header a.bloque {
+    display: block;
+}
+header a.oculto {
+    display: none;
+}
+header a {
+    width: 155px;
+    height: 75px;
+    float: right;
+    line-height: 75px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'ftf_indonesiana_serif';
+    font-size: 29px;
+    letter-spacing: 1.5px;
+    margin-bottom: 35px;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: white;
+}
+
+header a.activo{    
+    color:black;
+}
+
+header a:hover {
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: black;
+}
+
+
+/* Dialogo Modal */
+#modal_dialog.flex{
+    display: flex;
+}
+#modal_dialog.oculto{
+    display: none;
+}
+#modal_dialog{
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;        
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -350px;
+    background: #777; 
+    border-radius:7px; 
+    min-height: 150px;
+    padding: 25px;
+    width: 700px; 
+    z-index: 10;
+    font-family: 'josefin_sansregular';
+    font-size: 18px;
+    text-align: justify;
+}
+
+#modal_dialog #MDtitle{
+    font-size: 24px;
+    align-self:flex-start;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#modal_dialog #MDcontent{}
+
+#modal_dialog #btMYes,
+#modal_dialog #btMNo{
+    display: block;
+    float: right;    
+    margin-left: 5%;
+    height: 35px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: white;
+    align-self:flex-end;
+}
+
+#modal_dialog #btMYes{
+    background-color: #005974;
+    clear: both;
+}
+
+#modal_dialog #btMNo{
+    background-color: #ff3333;
+}
+
+
+#modal_dialog #btMYes:hover, 
+#modal_dialog #btMYes:active {
+    background: #A1C2E6;
+    color: black;        
+    border-color: black;
+}
+   
+#modal_dialog #btMNo:hover, 
+#modal_dialog #btMNo:active {
+    background-color: #ff9999;
+    color: black;        
+    border-color: black;
+}
+
+/* Cuerpo */
+#contenido{
+    font-family: 'josefin_sansregular';
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 50px;
+    color: white;
+    padding-bottom: 50px;
+    margin: 0 auto;
+}
+
+#contenido a{
+    color: white;
+    text-decoration: none;
+}
+
+#contenido #login.flex{
+    display: flex;
+}
+    
+#contenido #login.oculto{
+    display: none;
+}
+#contenido #login{
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 220px;
+    text-align: center;
+    background: #c95511;
+    border-radius: 5px;
+}
+
+#contenido #login #tituloLogin{
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+#contenido #login .txtinput{
+    display: block;    
+    width: 150px;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 0;  
+    height: 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    font-size: 18px;
+    padding-left: 50px;
+    color: #777;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset;
+    margin-bottom: 10px;
+}
+
+#contenido #login .txtinput:focus {
+    color: #333;
+    border-color: rgba(41, 92, 161, 0.4);
+    outline: 0 none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) inset, 0 0 8px rgba(40, 90, 160, 0.6);
+}
+
+#contenido #login .txtinput#nombreUser{
+    background: #fff url('../img/login.png') no-repeat;
+    background-position: 0 0;
+
+}
+
+#contenido #login .txtinput#clave{
+    background: #fff url('../img/login.png') no-repeat;
+    background-position: 0 -40px;    
+}
+
+#contenido #login #btLogin{
+    display: block;
+    float: left;    
+    margin-left: 5%;
+    height: 35px;
+    padding: 0 16px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: white;
+    background-color: #005974;
+}
+
+#contenido #login #btLogin:hover, 
+#contenido #login #btLogin:active {
+    background: #A1C2E6;
+    color: black;        
+    border-color: black;
+}
+
+#contenido #tabla.oculto{
+    display: none;    
+}
+
+#contenido #tabla.flex{
+    display: flex;    
+}
+
+#contenido #tabla{
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    min-width: 800px;
+    height: 320px;
+    text-align: center;
+    background: #c95511;
+    border-radius: 5px;        
+}
+
+#contenido #tabla table{
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#contenido #tabla #insertar{
+    display: block;
+    clear: both;
+    float: left;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 2px;
+    background: #A1C2E6;
+    color: black;        
+    border-color: black;
+}
+
+#contenido #tabla #insertar:hover{
+    color: #fff;
+    border-color: white;
+    background-color: #005974;
+}
+
+#contenido #tabla a:hover{
+    color:black;
+}
+#contenido #tabla td.link:hover {
+    background-color: #5c649d;
+}
+
+#contenido thead tr, #contenido tr.paginacion{
+    background: #005974;   
+}
+
+#contenido tr.paginacion td a{
+    display: inline-block;
+    width: 40px;
+}
+
+#contenido tr.paginacion td a#actual{
+    color: cyan;
+    font-size: 18px;
+}
+
+tr:nth-child(2n+1){
+    background: #a73c0f;    
+}
+
+tr:nth-child(2n){
+    background: #b8822a;    
+}
+
+#contenido #formulario.oculto{
+    display: none;    
+}
+
+#contenido #formulario.block{
+    display: block;    
+}
+
+#contenido #formulario{
+    margin: 0 auto;
+    padding: 15px;
+    width: 90%;
+    min-width: 800px;
+    min-height: 480px;
+    background: #c95511;
+    border-radius: 5px;        
+}
+
+#formulario #formTitle{
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#contenido #formulario .linea{
+    margin-top: 5px;
+    height: 30px;
+}
+
+#contenido #formulario label{
+    display: block;
+    float: left;
+    width: 150px;
+}
+
+#contenido #formulario .img{
+    float: left;
+    width: 400px;
+}
+
+#contenido #formulario .preImg{    
+    display: block;
+    width: 100px;
+}
+
+#contenido #formulario .preImg{
+    float: left;
+}
+
+#contenido #formulario .miniatura{
+    height: 50px;
+    margin-left: 100px;
+}
+
+#contenido #formulario .thumb, .thumb{
+    height: 50px;
+}
+
+#contenido #formulario #btForm{
+    display: block;
+    margin-top: 30px;
+    float: right;
+    width: 250px;
+}
+
+#contenido #formulario #btAceptar,
+#contenido #formulario #btCancelar{
+    display: block;
+    float: left;    
+    margin-left: 5%;
+    height: 35px;
+    padding: 0 16px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 2px;
+    border-color: white;
+}
+
+#contenido #formulario #btAceptar{
+    background-color: #005974;
+}
+#contenido #formulario #btCancelar{
+    background-color: #ff3333;
+}
+
+#contenido #formulario #btAceptar:hover, 
+#contenido #formulario #btAceptar:active {
+    background: #A1C2E6;
+    color: black;        
+    border-color: black;
+}
+
+#contenido #formulario #btCancelar:hover, 
+#contenido #formulario #btCancelar:active {
+    background-color: #ff9999;
+    color: black;        
+    border-color: black;
+}
+
+#contenido #mensaje.oculto{
+    display: none;
+}
+
+#contenido #mensaje.block{
+    display: block;
+}
+
+#contenido #mensaje{
+    display: none;
+    position:absolute;
+    bottom: 60px;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    height: 30px;        
+    padding: 25px;
+    text-align: center;        
+    background-color: #549EB4;
+    border-radius: 10px;
+}
+
+/* Pie */
+
+footer{
+    width: 100%;
+    height: 50px;
+    margin-top: -50px;
+    background-color: #38312C;
+    color: white;
+}
+
+#footer-center{
+    width: 900px;
+    height: 50px;
+    margin: 0 auto;
+    font-family: 'montserratregular';
+    font-size: 15pt;
+    text-align: center;
+    line-height: 50px;
+}

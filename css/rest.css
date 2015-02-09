@@ -1,0 +1,353 @@
+body {
+    margin: 0 auto;
+}
+#contenedor {
+    margin: 0 auto;
+}
+
+/* Cabecera */
+
+header nav{    
+    background-color: #c95511;
+    min-height: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+header a {
+    width: 155px;
+    height: 155px;
+    line-height: 155px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-image: url();
+    font-family: 'ftf_indonesiana_serif';
+    font-size: 29px;
+    letter-spacing: 1.5px;
+    margin-bottom: 35px;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: white;
+    background-image: url("../img/enlace.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+header a.activo{    
+    background-position: 0 -155px;
+    color:black;
+}
+
+header a:hover {
+    transition-property: color, background-image;
+    transition-duration: 2s, 10s;
+    transition-timing-function: ease;
+    transition-delay: 1ms, 10s;
+    color: black;
+    background-position: 0 -155px;
+}
+
+header #cajaLogo{
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+header #cajaLogo span{
+    font-family: 'ftf_indonesiana_serif';
+    font-size: 41px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+}
+
+#flechaAbajo{
+    position: fixed;    
+    bottom: 10px;
+    left: 49%;
+    z-index: 30;
+    -webkit-transform: translateZ(0);
+}
+
+
+/* Cuerpo */
+
+#contenido{
+    font-family: 'josefin_sansregular';
+    font-size: 20px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #41373f;  
+    color: white;
+}
+
+#contenido a.enlacePlato{
+    display: block;
+    color: white;
+    text-decoration: none;
+    height: 250px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 15px;
+}
+
+#contenido .tituloPlato{
+    display: block;
+    float: left;
+    width: 60%;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: #2b2b52;
+}
+
+#contenido .imagenPlato{
+    display: block;
+    float: right;
+    //width: 250px;
+    max-height: 200px;
+}
+
+#contenido .textoPlato{
+    display: block;
+    clear: both;
+    float: left;
+    margin-top: 10px;
+    width: 60%;
+    max-height: 200px;    
+}
+
+
+#contenido .textoPlato p{
+    margin-top: 0;
+}
+
+a.enlacePlato:nth-child(2n){
+    background: #b8822a;
+}
+
+a.enlacePlato:nth-child(2n+1){
+    background: #a73c0f;    
+}
+
+a.enlacePlato:hover{
+    background-color: #5c649d;
+}
+
+/* Paginacion */
+
+#contenido #cajaPaginacion{
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background: #2b2b52;
+    margin: 0;    
+    padding: 0;
+    padding-top: 5px;
+}
+#cajaPaginacion .paginacion{
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;            
+    margin-bottom: 10px;        
+    padding: 5px;
+}
+
+#cajaPaginacion a.paginacion{
+    font-size: 22px;
+    color: black;
+}
+
+#cajaPaginacion span.paginacion{
+    font-size: 18px;
+    color: darkcyan;
+}
+
+#contenido a.paginacion:hover{
+    color: white;
+    background: grey;
+}
+
+/* Pagina individual */
+#volver{
+    display: block;
+    font-family: 'josefin_sansregular';
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+    background-color: #41373f;  
+    color: white;
+    text-decoration: none;
+}
+
+#volver:hover{
+    color: blue;
+}
+
+#menuOculto {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 20;
+    background-color: #c95511;
+    -webkit-transform: translateZ(0);
+}
+
+#menuOculto a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'josefin_sansregular';
+    font-size: 20px;
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: white;
+}
+
+#menuOculto a.activoO {
+    color: black;
+}
+#menuOculto a:hover {
+    transition-property: color;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+    transition-delay: 1ms;
+    color: black;
+}
+
+/* Parallax */
+.parallax {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    height: 800px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.parallax article {
+    height: 270px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    text-align: center;
+    top: 500px;
+    width: 100%;
+    background-color: #41373f;  
+    color: white;
+    font-family: 'josefin_sansregular';
+}
+article.fuera {
+    height: 210px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: #41373f;  
+    color: white;
+    font-size: 20px;
+    font-family: 'josefin_sansregular';
+}
+
+article .mayor{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 800px;
+	font-size: 30px;
+}
+
+article.fuera:nth-child(2n){
+    background: #b8822a;
+}
+
+article.fuera:nth-child(2n+1){
+    background: #a73c0f;    
+}
+
+
+/* Pie */
+
+footer {
+    margin: 0 auto;
+    background-color: #c95511;
+}
+footer #cajaLogoF{
+    margin: 0 auto;
+    width: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer #cajaLogoF img{
+    width: 200px;
+}
+
+footer #cajaLogoF span{
+    font-family: 'ftf_indonesiana_serif';
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+}
+
+footer #textoPie{
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'montserratregular';
+    font-size: 20px;    
+    color: white;
+}
+
+footer #textoPie p{
+    margin-top: -15px;
+}
+
+footer #social{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    width: 500px;
+    font-family: 'social_icons_pro_set_1_-_roRg';
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+
+footer #social a{
+    color: white;
+    text-decoration: none;
+}
+
+footer #social a:hover{
+    color: grey;
+}
+
+footer #copy{
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer small{
+    margin: 0 auto;
+    color: white;
+    font-family: 'montserratregular';
+}

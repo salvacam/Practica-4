@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'ftf_indonesiana_serif';
+    src: url('ftf_indonesiana_serif_-webfont.eot');
+    src: url('ftf_indonesiana_serif_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('ftf_indonesiana_serif_-webfont.woff2') format('woff2'),
+         url('ftf_indonesiana_serif_-webfont.woff') format('woff'),
+         url('ftf_indonesiana_serif_-webfont.ttf') format('truetype'),
+         url('ftf_indonesiana_serif_-webfont.svg#ftf_indonesiana_serif_free_Rg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'social_icons_pro_set_1_-_roRg';
+    src: url('social_icons_pro_set_1_-_rounded-webfont.eot');
+    src: url('social_icons_pro_set_1_-_rounded-webfont.eot?#iefix') format('embedded-opentype'),
+         url('social_icons_pro_set_1_-_rounded-webfont.woff2') format('woff2'),
+         url('social_icons_pro_set_1_-_rounded-webfont.woff') format('woff'),
+         url('social_icons_pro_set_1_-_rounded-webfont.ttf') format('truetype'),
+         url('social_icons_pro_set_1_-_rounded-webfont.svg#social_icons_pro_set_1_-_roRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat-regular-webfont.eot');
+    src: url('montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('montserrat-regular-webfont.woff2') format('woff2'), url('montserrat-regular-webfont.woff') format('woff'), url('montserrat-regular-webfont.ttf') format('truetype'), url('montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('josefinsans-regular-webfont.eot');
+    src: url('josefinsans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('josefinsans-regular-webfont.woff2') format('woff2'),
+         url('josefinsans-regular-webfont.woff') format('woff'),
+         url('josefinsans-regular-webfont.ttf') format('truetype'),
+         url('josefinsans-regular-webfont.svg#josefin_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
